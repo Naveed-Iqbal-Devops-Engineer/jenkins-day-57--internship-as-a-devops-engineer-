@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+         agent { label 'ec2-stg' }  // agent-dev | agent-stg | agent-prod
+
 
     environment {
         GITHUB_CREDENTIALS_ID     = 'github56'
